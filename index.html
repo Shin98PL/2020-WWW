@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Loty</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <section class="head">
+        <header>LISTA LOTÓW</header>
+      <P>
+        <img class="obrazek"
+               src="https://flightradars24.pl/wp-content/uploads/2019/09/Lotnisko-Chopina-Przyloty-tablica.jpg"
+               alt="obrazek tablicy">
+      </P>
+    </section>
+
+    <section>
+        <table class="loty">
+          <tr>
+            <th>nr lotu</th>
+            <th>skąd</th>
+            <th>dokąd</th>
+            <th>data</th>
+            <th>godzina</th>
+          </tr>
+          <tr>
+            <td><a href="lot.html">1</a></td>
+            <td>Warszawa</td>
+            <td>Kraków</td>
+            <td>4.04.2020</td>
+            <td>11:11</td>
+          </tr>
+          <tr>
+            <td><a href="lot.html">2</a></td>
+            <td>Kraków</td>
+            <td>Gdańsk</td>
+            <td>5.04.2020</td>
+            <td>13:30</td>
+          </tr>
+          <tr>
+            <td><a href="lot.html">3</a></td>
+            <td>Gdańsk</td>
+            <td>Berlin</td>
+            <td>6.05.2021</td>
+            <td>16:44</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="Rezer">
+        <h1>Rezerwacja</h1>
+  
+        <label for="start">Skąd:</label>
+        <select id="start">
+          <option value="warszawa">Warszawa</option>
+          <option value="krakow">Kraków</option>
+          <option value="gdansk">Gdańsk</option>
+        </select><br>
+  
+        <label for="destination">Dokąd:</label>
+        <select id="destination">
+          <option value="krakow">Kraków</option>
+          <option value="lodz">Gdańsk</option>
+          <option value="nyc">Berlin</option>
+        </select><br>
+  
+        <label for="name">Imie i Nazwisko:</label>
+        <input type="text" id="name" name="name"><br>
+  
+        <label for="date">Data:</label>
+        <input type="date" id="date" name="date"><br>
+  
+        <button onclick="
+          document.getElementById('name').value = '';
+          document.getElementById('date').value = ''"
+        >Wyczysc</button>
+  
+        <form action="index_rez.html">
+            <button type="submit">Zarezerwuj</button>
+         </form>
+        
+      </section>
+
+      <section class="tail">
+    <footer>By Damian Chańko dc394127 </footer>
+      </section>
+</body>
+</html>
